@@ -20,9 +20,9 @@ export default class CreateRoomPage extends Component {
       votesToSkip: this.defaultVotes,
     };
 
-    this.handleRoomButtonPressed=this.handleRoomButtonPressed.bind(this);
-    this.handleGuestCanPauseChange=this.handleGuestCanPauseChange.bind(this);
-    this.handleVoteChange=this.handleVoteChange.bind(this);
+    this.handleRoomButtonPressed = this.handleRoomButtonPressed.bind(this);
+    this.handleGuestCanPauseChange = this.handleGuestCanPauseChange.bind(this);
+    this.handleVoteChange = this.handleVoteChange.bind(this);
   }
 
   handleVoteChange(e) {
@@ -37,18 +37,18 @@ export default class CreateRoomPage extends Component {
     });
   }
 
-  handleRoomButtonPressed(){
-    const requestOptions={
-      method:"POST",
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        votes_to_skip:this.state.votesToSkip,
+  handleRoomButtonPressed() {
+    const requestOptions = {
+      method: "POST",
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        votes_to_skip: this.state.votesToSkip,
         guest_can_pause: this.state.guestCanPause
       }),
     };
-    fetch('/api/create',requestOptions)
-      .then((response)=>response.json())
-      .then((data)=>console.log(data));
+    fetch('/api/create-room', requestOptions)
+      .then((response) => response.json())
+      .then((data) => console.log(data));
   }
 
   render() {
