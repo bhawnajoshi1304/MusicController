@@ -29,3 +29,8 @@ or for development:
 npm run dev
 
 ## Project Screenshots
+![screen shot](https://github.com/bhawnajoshi1304/MusicController/blob/master/Screenshots/1.JPG)
+![screen shot](https://github.com/bhawnajoshi1304/MusicController/blob/master/Screenshots/2.JPG)
+![screen shot](https://github.com/bhawnajoshi1304/MusicController/blob/master/Screenshots/3.JPG)
+![screen shot](https://github.com/bhawnajoshi1304/MusicController/blob/master/Screenshots/4.JPG)
+![screen shot](https://github.com/bhawnajoshi1304/MusicController/blob/master/Screenshots/5.JPG)
